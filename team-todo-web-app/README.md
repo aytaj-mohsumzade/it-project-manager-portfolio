@@ -324,3 +324,12 @@ team-todo-web-app/
   │   └── testing-checklist.md          # Test scenarios and UAT script
   └── releases/
       └── release-notes-v1.0.md         # Simulated release notes
+
+
+## Delivery Board & Issues
+
+I track the user stories for this project in GitHub:
+
+- Delivery board: [Team To-Do Web App – Delivery Board](https://github.com/users/aytaj-mohsumzade/projects/1/views/1)
+- Issues: see the Issues tab of this repository, labelled by epic and sprint
+
