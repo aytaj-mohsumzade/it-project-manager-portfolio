@@ -1,126 +1,199 @@
-# Team To-Do Web App – Self-Learning Project
+# Team To-Do Web App – End-to-End Delivery Case Study (Self-Initiated)
 
-## 1. Project Overview
+## 0. Executive Summary
 
-This is a **self-initiated learning project** I created to practice working like an IT Project Manager.
+This repository documents an end-to-end **product delivery case study** for a lightweight **Team To-Do Web Application**.
 
-The idea: a simple web application where a small team can create, track, and complete tasks in one place.
+The objective of this project was to simulate a realistic delivery scenario and demonstrate my capabilities as an **IT Project Manager / Delivery Lead** across the full lifecycle:
 
-I did not develop the code myself. My focus in this project is on the **project management side**: requirements, backlog, planning, basic documentation, and delivery approach.
+- Product discovery and business case
+- Requirements engineering (functional & non-functional)
+- Agile delivery planning (roadmap, sprints, releases)
+- Risk, dependency and stakeholder management
+- Quality, UAT and release management
+- Metrics, outcomes and continuous improvement
 
----
-
-## 2. My Role
-
-**Role:** Project Manager (learning project)
-
-I used this project to practice how I would:
-- Clarify the problem and goals
-- Write basic requirements and user stories
-- Plan and structure the work into small deliverables
-- Think about testing, feedback, and releases
+This is a **self-initiated learning project**, not a commercial engagement, designed to mirror how I would structure and lead a real-world digital product delivery.
 
 ---
 
-## 3. Problem & Goal
+## 1. Business Context & Problem Statement
 
-**Problem:** Teams often track tasks in many different places (chat, notes, memory), which leads to missed deadlines and confusion.
+Small teams often manage tasks across fragmented tools (chat, email, personal notes), creating:
 
-**Goal:** Design a simple solution where:
-- Each task has an owner, due date, and status
-- The team can see what is "To Do", "In Progress", and "Done"
-- It is easy to update tasks as work moves forward
+- Low visibility into who owns what and by when  
+- No single source of truth for work in progress  
+- Difficulty prioritising and following up  
+
+**Business Goal:**  
+Design and deliver a simple web application that provides a **shared, transparent task board** for small teams, with minimal onboarding and operational overhead.
+
+**Primary Outcome Sought:**  
+Enable teams to track tasks in a single place, with clear ownership and status, improving **predictability** and **accountability**.
 
 ---
 
-## 4. Scope
+## 2. Objectives & Success Metrics
 
-### In Scope
-- Simple web interface for creating and viewing tasks
-- Basic fields: title, description, assignee, due date, status
-- Simple filters (e.g. by status)
+### 2.1 Objectives
 
-### Out of Scope (for now)
-- Mobile app
+1. Provide a **centralised view** of all team tasks, including ownership and due dates.
+2. Enable team members to **create, update and complete tasks** with minimal friction.
+3. Establish a **lightweight delivery model** (backlog → sprints → releases) aligned with agile best practices.
+4. Demonstrate **end-to-end IT project management** including planning, risk management, and release governance.
+
+### 2.2 Example Success Metrics (for a real implementation)
+
+*(For this simulated project, these are target metrics I would use if the app were deployed to a real team.)*
+
+- ✅ Adoption: 80% of team members actively using the app weekly after 4 weeks.
+- ✅ Visibility: 100% of active tasks have an owner and due date.
+- ✅ Flow: 20–30% reduction in “hidden work” (tasks discussed in chat but not tracked).
+- ✅ Delivery: 90% of stories committed to a sprint are completed within the sprint after two iterations of stabilisation.
+
+---
+
+## 3. Scope, Constraints & Assumptions
+
+### 3.1 In Scope
+
+- Core web UI for:
+  - Creating tasks (title, description, assignee, due date, status)
+  - Viewing tasks in a list or basic board style (e.g., To Do / In Progress / Done)
+  - Editing and completing tasks
+- Basic filtering (e.g., by status, assignee)
+- Minimal authentication approach (e.g., single team, simplified access assumptions)
+- Documentation of:
+  - Requirements & user stories
+  - Backlog and sprint plan
+  - Testing / UAT approach
+  - Release notes and retrospective
+
+### 3.2 Out of Scope (Initial Release)
+
+- Native mobile application
+- Complex role-based permissions
 - Advanced reporting or analytics
-- Integrations with email, Slack, etc.
+- Integrations (Slack, email, calendar)
+- SSO / enterprise identity integration
+
+### 3.3 Key Constraints (Simulation)
+
+- No dedicated development team: the focus is on **project management process and artefacts**, not on writing production-grade code.
+- Tools used are limited to easily accessible options (GitHub, spreadsheets, diagrams, etc.).
 
 ---
 
-## 5. Requirements & User Stories
+## 4. Stakeholders, Roles & Governance
 
-I drafted the requirements and user stories in a separate document.
+### 4.1 Example Stakeholder Map (for a real deployment)
 
-Examples of user stories:
+| Role                      | Example Stakeholder        | Interest / Responsibility                                 |
+|---------------------------|----------------------------|----------------------------------------------------------|
+| Sponsor                   | Head of Operations         | Improve team visibility and on-time task delivery        |
+| Product Owner             | Team Lead                  | Owns backlog, prioritisation and acceptance of features  |
+| Delivery / IT PM          | Myself                     | Planning, coordination, risk/issue management            |
+| Engineering Lead          | Senior Developer (hypothetical) | Technical direction, estimates, implementation      |
+| QA / UAT Representatives  | 2–3 Key Team Members       | Validate functionality against real workflows            |
+| Support / Operations      | Team Coordinator           | Feedback on usability and day-to-day adoption            |
 
-- **US-01**: As a team member, I want to create a task with a title and due date so I don’t forget it.
-- **US-02**: As a team member, I want to change the status of a task to “Done” so that the team can see it is completed.
-- **US-03**: As a team lead, I want to see all tasks by status so I can understand overall progress.
-- **US-04**: As a team member, I want to edit a task if details change so that information stays up-to-date.
+### 4.2 Governance & Cadence
 
-(These are stored in [`requirements/user-stories.md`](./requirements/user-stories.md) – to be added.)
+For this project, I defined a **lightweight governance model**, which in a real setting would include:
 
----
+- Weekly **Planning / Refinement** (backlog review, prioritisation, estimates)
+- Bi-weekly **Sprint Review & Demo**
+- Bi-weekly **Retrospective** focusing on flow, bottlenecks, and communication
+- Ad hoc **Risk / Issue reviews** when needed
 
-## 6. Planning Approach
-
-For this learning project, I assumed the work would be delivered in **two short sprints**:
-
-- **Sprint 1** – Basic task creation and list view
-- **Sprint 2** – Editing tasks, changing status, basic filtering
-
-For each sprint, I defined:
-- A simple sprint goal
-- Which user stories belong to the sprint
-- A short review of what was “delivered” and what I would improve next time
-
-(Planned sprint breakdown in [`planning/sprint-plan.md`](./planning/sprint-plan.md) – to be added.)
+In this simulated project, these ceremonies are documented as structured notes and checklists.
 
 ---
 
-## 7. Testing & UAT
+## 5. Solution Overview
 
-Even though this is a learning project, I prepared:
+### 5.1 Functional Overview
 
-- A simple **test checklist** (can a user create, edit, and complete a task?)
-- A draft **UAT scenario**: how I would ask a small group of users to try the app and give feedback
+The Team To-Do Web App supports:
 
-(Details in [`uat/testing-checklist.md`](./uat/testing-checklist.md) – to be added.)
+- **Task Management**
+  - Create, update and delete tasks
+  - Assign tasks to team members
+  - Set and update due dates
+  - Track status (To Do / In Progress / Done)
 
----
+- **Task Visibility**
+  - See all tasks in a consolidated view
+  - Filter by status and assignee
+  - Optionally group by due date
 
-## 8. Tools Used
+### 5.2 Non-Functional Considerations (Conceptual)
 
-For this project, I focused on simple tools I can access easily:
+For a production implementation, I would consider:
 
-- **Google Sheets / Docs** – to structure backlog and requirements
-- **GitHub** – to store project documentation and make it visible
-- (Optional in future) Jira or Trello – to manage a more realistic digital board
-
----
-
-## 9. What I Practiced as a Project Manager
-
-Through this project I practiced:
-
-- Turning a vague idea into a clear **problem statement** and **goals**
-- Writing **user stories** with acceptance criteria
-- Planning work into **sprints** with goals and scope
-- Thinking about **testing** and **user acceptance**, not only building
-- Documenting everything clearly so that someone else could understand the project quickly
+- **Usability:** Minimal clicks to create/edit tasks, clear visual status indicators.
+- **Performance:** Fast page load and task updates for typical team size.
+- **Reliability:** Basic error handling; tasks are not lost on refresh.
+- **Security:** Appropriate data access controls if used across multiple teams.
+- **Scalability:** Ability to scale from a single team to multiple teams in future iterations.
 
 ---
 
-## 10. Next Steps
+## 6. Delivery Approach
 
-In the future, I plan to:
+### 6.1 Methodology
 
-- Connect this documentation with a simple real web app (for example, a basic To-Do app deployed by a developer or from a template)
-- Add screenshots of a Kanban board showing “To Do / In Progress / Done”
-- Expand the project with one or two additional features based on feedback
+I used a **Scrum-inspired iterative approach**, tailored for a small, focused product:
+
+- Product backlog maintained as user stories with acceptance criteria.
+- Timeboxed iterations (**sprints**) with clear sprint goals.
+- Emphasis on early usable increments (MVP first, then enhancements).
+
+### 6.2 High-Level Timeline (Simulated)
+
+- **Discovery & Shaping (Iteration 0):**
+  - Problem framing, personas, key workflows
+  - Draft backlog and high-level architecture
+
+- **Sprint 1 – MVP Task Management:**
+  - Basic task CRUD (Create, Read, Update, Delete)
+  - Single list view with status and due date
+
+- **Sprint 2 – Usability & Filtering:**
+  - Filter by status and assignee
+  - Small UX refinements based on hypothetical feedback
+
+- **Sprint 3 – Hardening & UAT Readiness:**
+  - Edge cases, validation, better empty states
+  - UAT scenario preparation, bug triage
+
+Detailed sprint breakdown is documented in:  
+`team-todo-web-app/planning/sprint-plan.md` (planned content).
 
 ---
 
-## 11. Notes
+## 7. Requirements & User Stories
 
-This is a **learning project** created alongside my transition from general project management to **IT / digital project management**. My goal is to show how I think, structure work, and communicate as a project manager, even when I am not the person writing the code.
+Requirements and user stories are maintained in:
+
+- `team-todo-web-app/requirements/user-stories.md`
+
+The backlog is structured into:
+
+- **Epics**
+  - EP-01 Core Task Management
+  - EP-02 Visibility & Filtering
+  - EP-03 Team Experience & Adoption
+
+- **Example User Stories**
+
+```text
+US-01: As a team member, I want to create a task with a title, description, due date and assignee so that responsibilities are clear.
+
+US-02: As a team member, I want to change the status of a task (To Do, In Progress, Done) so that the board reflects reality.
+
+US-03: As a team lead, I want to filter tasks by assignee so that I can quickly see each person’s workload.
+
+US-04: As a team member, I want to edit a task when requirements change so that the information stays accurate.
+
+US-05: As a team lead, I want to see all tasks overdue or due soon so that I can follow up proactively.
